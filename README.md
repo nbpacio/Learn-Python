@@ -28,13 +28,24 @@ Execute:
 
     DEFAULT_DOMAIN=learnpython.org make run
 
+IN Powershell:
+
+    $env:DEFAULT_DOMAIN="learnpython.org"; docker-compose up
+
+    
+    Excellent! The application is now running successfully! I can see the server is loading the tutorial files and starting up. Let me check if it's fully running by waiting a moment and then checking if the server is accessible:
+
+
+    Start-Sleep 5; curl http://localhost:5000 or 5001
+    
+
 This command will run learnpython.org website by default using Docker Compose.
 
 To run a specific website, run with the DEFAULT_DOMAIN option set, as follows:
 
     DEFAULT_DOMAIN=learn-js.org make run
 
-By default, the server process will run at http://localhost:5000.
+By default, the server process will run at http://localhost:5000 or 5001
 
 The web server will locally compile and load all Markdown files into memory. The docker needs to be rebuilt upon any change in the Python code or the Markdown code.
 
