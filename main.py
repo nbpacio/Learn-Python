@@ -77,6 +77,7 @@ LANGUAGES = {
     "id": "Bahasa Indonesia",
     "ms": "Bahasa Melayu",
     "vi": "Tiếng Việt",
+    "tl": "Tagalog",
 }
 
 CODING_FOR_KIDS_TITLES = [
